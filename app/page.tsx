@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
+import { SnowAnimation } from "@/components/snow-animation"
 
 export default function Home() {
   const router = useRouter()
@@ -11,7 +12,10 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 relative overflow-hidden cursor-umbrella">
+      {/* Snow Animation */}
+      <SnowAnimation />
+
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-teal-500 blur-xl"></div>
@@ -28,7 +32,7 @@ export default function Home() {
 
         {/* Tagline */}
         <p className="text-xl md:text-2xl mb-12 text-gray-300 malayalam-font font-medium">
-          Auntymark evide irunn talk cheyamm finder
+          Best paradooshanam area finder
         </p>
 
         {/* Get Started Button */}

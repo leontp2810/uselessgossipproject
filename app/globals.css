@@ -151,3 +151,28 @@
   backdrop-filter: blur(4px);
   border: 2px solid var(--kerala-gold);
 }
+
+/* Umbrella Cursor */
+.cursor-umbrella {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M16 2C8.268 2 2 8.268 2 16c0 1.105.895 2 2 2h24c1.105 0 2-.895 2-2 0-7.732-6.268-14-14-14z' fill='%23d4af37'/%3E%3Cpath d='M16 18v10c0 1.105-.895 2-2 2s-2-.895-2-2v-2' stroke='%23d4af37' stroke-width='2' fill='none'/%3E%3C/svg%3E")
+    16 16, auto;
+}
+
+/* Snow animation styles */
+@keyframes snowfall {
+  0% {
+    transform: translateY(-100vh) translateX(0px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(100px);
+  }
+}
+
+.snowflake {
+  position: fixed;
+  top: -10px;
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+  animation: snowfall linear infinite;
+}
